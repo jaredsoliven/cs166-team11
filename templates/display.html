@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You were phished!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display.css') }}">
+</head>
+<body class="display-body">
+<div class="phished-div">
+    <h2>You were phished!</h2>
+    <p>This was a spoofed version of the SJSU website. Your username of "{{ username }}" and password of "{{ password }}"
+        have been saved.</p>
+</div>
+</body>
+</html>

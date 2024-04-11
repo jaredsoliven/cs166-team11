@@ -1,0 +1,1677 @@
+.warning {
+    text-align: center;
+    font-weight: bold;
+    color: #FF0000;
+    height: 50px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: -100px;
+}
+
+.clearfix {
+    display: block
+}
+
+.clearfix:after, .clearfix:before {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+#okta-sign-in {
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #6e6e78;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.4;
+    margin: 100px auto 8px;
+    min-width: 300px;
+    overflow: auto;
+    position: relative;
+    width: 400px
+}
+
+#okta-sign-in:focus {
+    outline: none
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    #okta-sign-in {
+        margin-top: 0;
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #okta-sign-in {
+        width: 100%
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #okta-sign-in {
+        margin-top: 0
+    }
+}
+
+
+#okta-sign-in.no-beacon .auth-content {
+    padding-top: 20px
+}
+
+#okta-sign-in.no-beacon .auth-header {
+    padding-bottom: 30px
+}
+
+.auth .content {
+    display: inline-block;
+    min-height: 100%;
+    min-width: 300px;
+    width: 100%
+}
+
+.auth .content:after {
+    content: "";
+    display: block;
+    height: 30px
+}
+
+.auth .footer {
+    background-color: #fff;
+    bottom: 0;
+    font-size: 12px;
+    height: 34px;
+    left: 0;
+    min-width: 300px;
+    overflow: hidden;
+    position: absolute;
+    right: 0
+}
+
+.auth .footer .footer-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 9px 80px
+}
+
+
+@media only screen and (max-width: 560px) {
+    .auth .footer .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 400px
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .auth .footer .footer-container {
+        width: 100%
+    }
+}
+
+.auth .footer a {
+    color: #6e6e78
+}
+
+.auth .footer a:active, .auth .footer a:link, .auth .footer a:visited {
+    color: #6e6e78;
+    text-decoration: none
+}
+
+.auth .footer a:focus, .auth .footer a:hover {
+    color: #6e6e78;
+    text-decoration: underline
+}
+
+.auth .footer .copyright {
+    float: left
+}
+
+.auth .footer .privacy-policy {
+    float: right
+}
+
+.login-bg-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -5
+}
+
+.okta-container .applogin-banner {
+    margin-bottom: 10px;
+    min-width: 300px;
+    position: relative
+}
+
+.okta-container .applogin-banner .applogin-background {
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0 0 2px 1px hsla(0, 0%, 69%, .3);
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.okta-container .applogin-banner .applogin-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    width: 400px
+}
+
+@media only screen and (max-width: 400px) {
+    .okta-container .applogin-banner .applogin-container {
+        width: 100%
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .okta-container .applogin-banner .applogin-container {
+        padding: 10px 0
+    }
+}
+
+@media only screen and (max-height: 660px) {
+    .okta-container .applogin-banner .applogin-container {
+        padding: 5px 0
+    }
+}
+
+
+.okta-container .applogin-banner .applogin-container h1 {
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 26px
+}
+
+.okta-container .applogin-banner .applogin-app-logo {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle
+}
+
+.okta-container .applogin-banner .applogin-app-logo img {
+    max-height: 26px
+}
+
+#okta-sign-in {
+    /*! Custom qtip styles, based on dark theme */
+}
+
+#okta-sign-in [class*="-16"]:after, #okta-sign-in [class*="-16"]:before, #okta-sign-in [class^="-16"]:after, #okta-sign-in [class^="-16"]:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+    display: block;
+    font-size: 16px;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    position: absolute;
+    text-indent: 0;
+    white-space: normal
+}
+
+#okta-sign-in .visibility-16:before {
+    color: #8c8c96;
+    content: "\e022"
+}
+
+#okta-sign-in .visibility-off-16:before {
+    color: #8c8c96;
+    content: "\e0c3"
+}
+
+
+#okta-sign-in a, #okta-sign-in abbr, #okta-sign-in acronym, #okta-sign-in address, #okta-sign-in applet, #okta-sign-in b, #okta-sign-in big, #okta-sign-in blockquote, #okta-sign-in body, #okta-sign-in caption, #okta-sign-in center, #okta-sign-in cite, #okta-sign-in code, #okta-sign-in dd, #okta-sign-in del, #okta-sign-in dfn, #okta-sign-in div, #okta-sign-in dl, #okta-sign-in dt, #okta-sign-in em, #okta-sign-in fieldset, #okta-sign-in form, #okta-sign-in h1, #okta-sign-in h2, #okta-sign-in h3, #okta-sign-in h4, #okta-sign-in h5, #okta-sign-in h6, #okta-sign-in html, #okta-sign-in i, #okta-sign-in iframe, #okta-sign-in img, #okta-sign-in ins, #okta-sign-in kbd, #okta-sign-in label, #okta-sign-in legend, #okta-sign-in li, #okta-sign-in object, #okta-sign-in ol, #okta-sign-in p, #okta-sign-in pre, #okta-sign-in q, #okta-sign-in s, #okta-sign-in samp, #okta-sign-in small, #okta-sign-in span, #okta-sign-in strike, #okta-sign-in strong, #okta-sign-in sub, #okta-sign-in sup, #okta-sign-in table, #okta-sign-in tbody, #okta-sign-in td, #okta-sign-in tfoot, #okta-sign-in th, #okta-sign-in thead, #okta-sign-in tr, #okta-sign-in tt, #okta-sign-in u, #okta-sign-in ul, #okta-sign-in var {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+#okta-sign-in body {
+    line-height: 1
+}
+
+#okta-sign-in ol, #okta-sign-in ul {
+    list-style: none
+}
+
+#okta-sign-in blockquote, #okta-sign-in q {
+    quotes: none
+}
+
+#okta-sign-in blockquote:after, #okta-sign-in blockquote:before, #okta-sign-in q:after, #okta-sign-in q:before {
+    content: none
+}
+
+#okta-sign-in :focus {
+    outline: 0
+}
+
+#okta-sign-in ins {
+    text-decoration: none
+}
+
+#okta-sign-in del {
+    text-decoration: line-through
+}
+
+#okta-sign-in table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+#okta-sign-in input[type=hidden] {
+    display: none !important
+}
+
+#okta-sign-in input[type=checkbox], #okta-sign-in input[type=radio] {
+    border: 0 !important;
+    margin: 0;
+    padding: 0
+}
+
+#okta-sign-in .o-form-fieldset:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+#okta-sign-in .o-form-fieldset {
+    word-wrap: break-word;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 15px
+}
+
+#okta-sign-in .o-form-fieldset:last-child {
+    margin-bottom: 0
+}
+
+#okta-sign-in * html .o-form-fieldset {
+    height: 1%
+}
+
+#okta-sign-in .o-form-fieldset {
+    display: block
+}
+
+#okta-sign-in .o-form-input, #okta-sign-in .o-form-label {
+    float: left
+}
+
+#okta-sign-in .o-form-label {
+    box-sizing: border-box;
+    color: #5e5e5e;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 7px 10px 7px 0;
+    width: 38%
+}
+
+#okta-sign-in .o-form-input {
+    width: 62%
+}
+
+#okta-sign-in .o-form .input-fix {
+    height: 30px
+}
+
+#okta-sign-in .o-form .input-fix input[type=number], #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .input-fix input[type=tel], #okta-sign-in .o-form .input-fix input[type=text], #okta-sign-in .o-form .input-fix input[type=textbox] {
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 16px;
+    margin: 0;
+    padding: 6px 8px;
+    width: 100%
+}
+
+
+#okta-sign-in .o-form .input-fix .password-toggle .eyeicon {
+    cursor: pointer;
+    height: 32px;
+    padding: 6px 8px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px
+}
+
+#okta-sign-in .o-form .input-fix .password-toggle .button-hide {
+    display: none
+}
+
+#okta-sign-in .o-form .input-fix input[type=number] {
+    border: none
+}
+
+#okta-sign-in .o-form-control + .o-form-control {
+    margin-top: 20px
+}
+
+#okta-sign-in .custom-checkbox {
+    clear: both;
+    position: relative
+}
+
+#okta-sign-in .custom-checkbox input, #okta-sign-in .custom-radio input {
+    filter: Alpha(Opacity=0);
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 7px
+}
+
+#okta-sign-in .custom-checkbox label, #okta-sign-in .custom-radio label {
+    cursor: pointer;
+    display: block;
+    line-height: 16px;
+    margin: 0;
+    padding: 7px 10px 7px 24px;
+    position: relative
+}
+
+#okta-sign-in .custom-checkbox label {
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    #okta-sign-in .custom-checkbox label {
+
+        background-size: 50px 1155px
+    }
+}
+
+
+#okta-sign-in .custom-checkbox + .o-form-explain, #okta-sign-in .custom-checkbox + input + .o-form-explain, #okta-sign-in .custom-radio + .o-form-explain, #okta-sign-in .custom-radio + input + .o-form-explain {
+    padding-top: 0
+}
+
+#okta-sign-in .o-form-button-bar {
+    background: #f2f2f2;
+    border-color: #dadada #ddd;
+    border-radius: 0 0 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px hsla(0, 0%, 69%, .16);
+    margin-top: -1px;
+    padding: 16px;
+    text-align: right
+}
+
+#okta-sign-in .o-form-button-bar .button + .button, #okta-sign-in .o-form-toolbar .button + .button, #okta-sign-in .o-form-toolbar.ui-tabs .button + .button {
+    margin-left: 10px
+}
+
+#okta-sign-in .o-form-head {
+    color: #46b090;
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+#okta-sign-in .o-form-explain + .o-form-head, #okta-sign-in .o-form-fieldset + .o-form-head {
+    border-top: 1px solid #e3e3e3;
+    margin-top: 30px;
+    padding-top: 30px
+}
+
+#okta-sign-in .o-form-explain + .o-form-fieldset {
+    margin-top: 20px
+}
+
+#okta-sign-in .o-form-explain {
+    color: #a7a7a7;
+    font-weight: 400
+}
+
+#okta-sign-in .o-form-explain + .o-form-explain {
+    margin-top: 0
+}
+
+#okta-sign-in .o-form-input .o-form-explain {
+    clear: both;
+    line-height: 18px;
+    padding: 8px 0 6px
+}
+
+
+#okta-sign-in .o-form-theme {
+    background: #f9f9f9;
+    border: 1px solid;
+    border-color: #ddd #ddd #d2d2d2;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px hsla(0, 0%, 69%, .16);
+    padding: 30px
+}
+
+#okta-sign-in .o-form-title-bar + .o-form-theme {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+#okta-sign-in .custom-checkbox label, #okta-sign-in .custom-radio label {
+    background-position: -16px -13px
+}
+
+#okta-sign-in .custom-checkbox label.focus, #okta-sign-in .custom-checkbox label.hover, #okta-sign-in .custom-radio label.focus, #okta-sign-in .custom-radio label.hover {
+    background-position: -16px -113px
+}
+
+#okta-sign-in .custom-checkbox label.checked, #okta-sign-in .custom-radio label.checked {
+    background-position: -16px -213px
+}
+
+#okta-sign-in .custom-checkbox label.checked.focus, #okta-sign-in .custom-checkbox label.checked.hover {
+    background-position: -16px -313px
+}
+
+#okta-sign-in .o-form-label-top .o-form-input, #okta-sign-in .o-form-label-top .o-form-label {
+    width: 100%
+}
+
+#okta-sign-in .o-form-content > .o-form-explain {
+    margin-bottom: 20px
+}
+
+#okta-sign-in h1 {
+    color: #5e5e5e
+}
+
+#okta-sign-in h2, #okta-sign-in h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5
+}
+
+#okta-sign-in h3 {
+    margin-bottom: 2px
+}
+
+#okta-sign-in .auth-content {
+    padding: 60px 42px 20px;
+    -moz-transition: padding-top .4s;
+    -webkit-transition: padding-top .4s;
+    transition: padding-top .4s
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    #okta-sign-in .auth-content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #okta-sign-in .auth-content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+
+#okta-sign-in .auth-content .auth-content-inner {
+    position: relative
+}
+
+#okta-sign-in .auth-content .help-links li {
+    margin-top: 15px
+}
+
+#okta-sign-in .no-beacon .auth-content {
+    padding-top: 20px
+}
+
+#okta-sign-in .o-form-head {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: none
+}
+
+#okta-sign-in .o-form-head + .o-form-explain {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+#okta-sign-in .o-form-button-bar {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 25px
+}
+
+#okta-sign-in .o-form-button-bar .button {
+    display: block;
+    height: 50px;
+    width: 100%
+}
+
+#okta-sign-in .o-form-theme {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 14px
+}
+
+#okta-sign-in .o-form .o-form-fieldset:last-child {
+    margin-bottom: 15px
+}
+
+#okta-sign-in .o-form .o-form-label, #okta-sign-in .o-form input, #okta-sign-in .o-form label, #okta-sign-in .o-form textarea {
+    font-size: 14px
+}
+
+#okta-sign-in .o-form .o-form-label {
+    font-weight: 400
+}
+
+#okta-sign-in .o-form .o-form-label-inline + .input-fix input[type=text] {
+    line-height: 27px
+}
+
+#okta-sign-in .o-form .input-fix {
+    border: 1px solid #8c8c96;
+    display: inline-block;
+    float: left;
+    height: 40px
+}
+
+#okta-sign-in .o-form .input-fix input[disabled], #okta-sign-in .o-form .input-fix input[readonly], #okta-sign-in .o-form .textarea-fix input[disabled], #okta-sign-in .o-form .textarea-fix input[readonly] {
+    background: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
+    color: #6e6e78
+}
+
+#okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .input-fix input, #okta-sign-in .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+#okta-sign-in .o-form .input-fix input::-webkit-input-placeholder, #okta-sign-in .o-form .textarea-fix input::-webkit-input-placeholder {
+    font-size: 14px;
+    letter-spacing: 0
+}
+
+#okta-sign-in .o-form .input-fix input::-moz-placeholder, #okta-sign-in .o-form .textarea-fix input::-moz-placeholder {
+    font-size: 14px
+}
+
+#okta-sign-in .o-form .input-fix input:-ms-input-placeholder, #okta-sign-in .o-form .textarea-fix input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 27px
+}
+
+#okta-sign-in .o-form .input-fix input:-webkit-autofill, #okta-sign-in .o-form .textarea-fix input:-webkit-autofill {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 0 1000px #fff
+}
+
+#okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+    font-size: 14px
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    #okta-sign-in .o-form .chzn-container-single .chzn-search input, #okta-sign-in .o-form select, #okta-sign-in .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+#okta-sign-in .o-form .custom-checkbox label {
+    font-size: 13px
+}
+
+#okta-sign-in .o-form .o-form-input input[name=nextPassCode], #okta-sign-in .o-form .o-form-input input[name=passCode] {
+    font-family: Anonymous Pro, Andale Mono, Courier New, Courier, serif;
+    font-size: 17px;
+    letter-spacing: 1px
+}
+
+#okta-sign-in .o-form .o-form-input .o-form-control {
+    position: relative
+}
+
+
+#okta-sign-in .o-form-input-group .o-form-control {
+    display: table-cell;
+    float: none;
+    white-space: nowrap
+}
+
+
+#okta-sign-in .custom-checkbox label {
+
+    height: 30px
+}
+
+#okta-sign-in .custom-checkbox label.focus {
+    background-position: -16px -1013px
+}
+
+#okta-sign-in .custom-checkbox label.focus:before {
+    background-position: -16px -1020px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    #okta-sign-in .custom-checkbox label {
+
+        background-size: 50px 1155px;
+        height: 30px
+    }
+}
+
+
+#okta-sign-in .button-secondary.link-button, #okta-sign-in .button-wide, #okta-sign-in .button-wide.button-primary, #okta-sign-in .default-custom-button.link-button, #okta-sign-in .piv-button.link-button, #okta-sign-in .social-auth-button.link-button {
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    width: 100%
+}
+
+#okta-sign-in .auth-header {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 90px 75px;
+    position: relative;
+    -moz-transition: padding-bottom .4s;
+    -webkit-transition: padding-bottom .4s;
+    transition: padding-bottom .4s;
+    z-index: 10
+}
+
+#okta-sign-in .auth-org-logo {
+    display: block;
+    margin: 0 auto;
+    max-height: 40px;
+    max-width: 200px
+}
+
+#okta-sign-in .beacon-container {
+    bottom: -42px;
+    height: 85px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    width: 85px
+}
+
+#okta-sign-in .beacon-container.beacon-small {
+    bottom: -10px;
+    height: 20px;
+    width: 20px
+}
+
+#okta-sign-in .beacon-container.beacon-small .beacon-blank {
+    left: -20px;
+    width: 50px
+}
+
+#okta-sign-in .beacon-blank {
+    background-color: transparent;
+    background-image: none;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#okta-sign-in .auth-footer {
+    font-size: 13px
+}
+
+#okta-sign-in .auth-footer .js-factor-page-custom-link {
+    display: block
+}
+
+#okta-sign-in .auth-footer .goto {
+    float: right
+}
+
+#okta-sign-in .auth-footer .dot-separator {
+    font-weight: 700
+}
+
+#okta-sign-in .auth-footer.footer-back-link {
+    margin-top: .75em
+}
+
+#okta-sign-in .siw-main-view .infobox-error, #okta-sign-in .siw-main-view .infobox-warning {
+    display: block;
+    margin-bottom: 15px
+}
+
+#okta-sign-in .siw-main-view .okta-form-subtitle {
+    margin: 25px 0 10px;
+    text-align: left
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .o-form-content {
+    overflow: unset
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .ion-messages-container {
+    margin-bottom: 1rem;
+    text-align: center
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .ion-messages-container > * {
+    margin-top: 1rem
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .o-form-content .o-form-label {
+    padding-right: 0
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .o-form-content .o-form-label .o-form-explain {
+    float: right
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .identifier-container {
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    top: -5px;
+    white-space: nowrap
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .identifier {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#okta-sign-in .siw-main-view .siw-main-body .identifier-container:before {
+
+    padding-right: 4px;
+    vertical-align: -20%
+}
+
+#okta-sign-in .siw-main-view .custom-checkbox {
+    width: max-content
+}
+
+#okta-sign-in .siw-main-view .custom-checkbox label {
+    line-height: inherit
+}
+
+#okta-sign-in .siw-main-view .o-form-explain.o-form-input-error {
+    word-break: normal
+}
+
+#okta-sign-in .siw-main-footer .auth-footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%
+}
+
+#okta-sign-in .siw-main-footer .auth-footer .link {
+    word-wrap: break-word;
+    padding: .3rem 0;
+
+
+    width: fit-content
+}
+
+#okta-sign-in .siw-main-footer .auth-footer .help-description .ov-enrollment-info {
+    list-style: decimal;
+    margin: 15px 0 15px 15px
+}
+
+#okta-sign-in .siw-main-footer .auth-footer.side-by-side-links {
+    display: flex;
+    flex-direction: row
+}
+
+#okta-sign-in .siw-main-footer .auth-footer.side-by-side-links .link {
+    flex-basis: 50%
+}
+
+#okta-sign-in .siw-main-footer .auth-footer.side-by-side-links .link.js-skip-setup {
+    color: #007cc0;
+    order: 2;
+    text-align: right
+}
+
+#okta-sign-in .siw-main-footer .footer-info {
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 1rem;
+    padding-top: 1rem
+}
+
+#okta-sign-in .siw-main-footer .footer-info .signup-info {
+    margin: 0 auto
+}
+
+#okta-sign-in .siw-main-footer .footer-info .signup-info span {
+    padding: .3rem 0
+}
+
+#okta-sign-in .siw-main-footer .footer-info .signup-info .signup-link {
+    padding-left: .3rem
+}
+
+#okta-sign-in .siw-main-footer .footer-info .signup-info .signup-link .link {
+    color: #007cc0
+}
+
+#okta-sign-in .siw-main-header {
+    position: relative
+}
+
+#okta-sign-in .siw-main-header .beacon-container {
+    top: -183px;
+    z-index: 10
+}
+
+#okta-sign-in .siw-main-header .beacon-container .auth-beacon-factor {
+    cursor: auto
+}
+
+#okta-sign-in .o-form-button-bar .links-primary {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-bottom: -1em;
+    margin-top: 1.9em;
+    max-width: 100%;
+    text-align: left;
+
+
+    width: fit-content
+}
+
+#okta-sign-in .o-form-button-bar .links-primary .link {
+    word-wrap: break-word;
+    padding: .3rem 0
+}
+
+#okta-sign-in .siw-main-view .siw-main-body a.resend-link {
+    cursor: pointer
+}
+
+#okta-sign-in .siw-main-view .siw-main-body span.authenticator-verify-nickname, #okta-sign-in .siw-main-view .siw-main-body span.strong {
+    color: #1d1d21;
+    font-weight: 700;
+    word-break: break-all
+}
+
+#okta-sign-in .siw-main-view .clearfix:after, #okta-sign-in .siw-main-view .clearfix:before {
+    content: "";
+    height: 102%;
+    visibility: visible
+}
+
+#okta-sign-in .focused-input, #okta-sign-in .link.help:focus, #okta-sign-in input[type=radio]:focus + label, #okta-sign-in input[type=text]:focus {
+    box-shadow: 0 0 8px #51cbee
+}
+
+#okta-sign-in .o-form-button-bar.focused-input {
+    margin-bottom: 25px;
+    padding-bottom: 0
+}
+
+.o-form-head {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: none
+}
+
+.o-form-head + .o-form-explain {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.o-form-button-bar {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 25px
+}
+
+.o-form-button-bar .button {
+    display: block;
+    height: 50px;
+    width: 100%
+}
+
+.o-form-button-bar .button-success {
+    position: absolute;
+    text-align: center
+}
+
+.o-form-theme {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 14px
+}
+
+.o-form .o-form-fieldset:last-child {
+    margin-bottom: 15px
+}
+
+.o-form .o-form-fieldset.margin-btm-0 {
+    margin-bottom: 0
+}
+
+.o-form .o-form-label, .o-form input, .o-form label, .o-form textarea {
+    font-size: 14px
+}
+
+.o-form .o-form-label {
+    font-weight: 400
+}
+
+.o-form .o-form-label-inline + .input-fix input[type=text] {
+    line-height: 27px
+}
+
+.o-form .input-fix, .o-form .textarea-fix {
+    border: 1px solid #8c8c96;
+    display: inline-block;
+    float: left;
+    height: 40px
+}
+
+.o-form .input-fix input[disabled], .o-form .input-fix input[readonly], .o-form .textarea-fix input[disabled], .o-form .textarea-fix input[readonly] {
+    background: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .1);
+    color: #6e6e78
+}
+
+.o-form .input-fix input, .o-form .textarea-fix input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .o-form .input-fix input, .o-form .textarea-fix input {
+        font-size: 15px
+    }
+}
+
+.o-form .input-fix input::-webkit-input-placeholder, .o-form .textarea-fix input::-webkit-input-placeholder {
+    font-size: 14px;
+    letter-spacing: 0
+}
+
+.o-form .input-fix input::-moz-placeholder, .o-form .textarea-fix input::-moz-placeholder {
+    font-size: 14px
+}
+
+.o-form .input-fix input:-ms-input-placeholder, .o-form .textarea-fix input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 27px
+}
+
+.o-form .input-fix input:-webkit-autofill, .o-form .textarea-fix input:-webkit-autofill {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 0 1000px #fff
+}
+
+.o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+    font-size: 14px
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .o-form .input-fix input[type=password], .o-form .textarea-fix input[type=password] {
+        font-size: 15px
+    }
+}
+
+.o-form .input-fix .placeholder, .o-form .textarea-fix .placeholder {
+    color: #aaa
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .o-form .chzn-container-single .chzn-search input, .o-form select, .o-form select:focus {
+        font-size: 15px
+    }
+}
+
+.o-form .custom-checkbox label {
+    font-size: 13px
+}
+
+.o-form .o-form-input input[name=nextPassCode], .o-form .o-form-input input[name=passCode] {
+    font-family: Anonymous Pro, Andale Mono, Courier New, Courier, serif;
+    font-size: 17px;
+    letter-spacing: 1px
+}
+
+.o-form .o-form-input .o-form-control {
+    position: relative
+}
+
+.o-form .o-form-input .input-icon, .o-form .o-form-input .input-tooltip {
+    height: 16px;
+    margin-top: -11px;
+    position: absolute;
+    top: 50%;
+    width: 16px
+}
+
+.o-form .o-form-input .input-icon + input, .o-form .o-form-input .input-icon + input + input, .o-form .o-form-input .input-tooltip + input, .o-form .o-form-input .input-tooltip + input + input {
+    padding-right: 30px
+}
+
+.o-form .o-form-input .input-icon {
+    left: 10px;
+    opacity: .25
+}
+
+.o-form .o-form-input .input-icon + input, .o-form .o-form-input .input-icon + input + input {
+    padding-left: 30px
+}
+
+.o-form .o-form-input .input-tooltip {
+    opacity: .5;
+    right: 10px
+}
+
+.o-form-input-group .o-form-control {
+    display: table-cell;
+    float: none;
+    white-space: nowrap
+}
+
+.custom-checkbox label {
+
+    height: 30px
+}
+
+.custom-checkbox label.focus {
+    background-position: -16px -1013px
+}
+
+.custom-checkbox label.focus:before {
+    background-position: -16px -1020px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .custom-checkbox label {
+
+        background-size: 50px 1155px;
+        height: 30px
+    }
+}
+
+@media (-ms-high-contrast: active),(-ms-high-contrast: none) {
+    #okta-sign-in.auth-container {
+        display: block
+    }
+}
+
+#okta-sign-in.auth-container.main-container {
+    color: #6e6e78;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container h2, #okta-sign-in.auth-container h3 {
+    color: #5e5e5e;
+    font-weight: 600
+}
+
+#okta-sign-in.auth-container .okta-sign-in-header {
+    color: #5e5e5e
+}
+
+#okta-sign-in.auth-container .okta-form-subtitle {
+    color: #6e6e78
+}
+
+#okta-sign-in.auth-container .okta-form-label {
+    color: #1d1d21;
+    font-weight: 600
+}
+
+#okta-sign-in.auth-container .o-form-explain {
+    padding-top: 0
+}
+
+#okta-sign-in.auth-container .o-form-explain.okta-form-input-error {
+    padding-top: 8px
+}
+
+#okta-sign-in.auth-container .link, #okta-sign-in.auth-container .link:active, #okta-sign-in.auth-container .link:hover, #okta-sign-in.auth-container .link:link, #okta-sign-in.auth-container .link:visited {
+    color: #6e6e78
+}
+
+#okta-sign-in.auth-container .inline-link, #okta-sign-in.auth-container .inline-link:active, #okta-sign-in.auth-container .inline-link:hover, #okta-sign-in.auth-container .inline-link:link, #okta-sign-in.auth-container .inline-link:visited {
+    color: #0074b3
+}
+
+#okta-sign-in.auth-container input[type=button], #okta-sign-in.auth-container input[type=submit] {
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container input[type=button]:focus, #okta-sign-in.auth-container input[type=submit]:focus {
+    border-color: #0074b3;
+    box-shadow: 0 0 8px #51cbee
+}
+
+#okta-sign-in.auth-container.main-container {
+    background-color: #fff;
+    border-color: #ddd #ddd #d8d8d8;
+    box-shadow: 0 2px 0 hsla(0, 0%, 69%, .12)
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    #okta-sign-in.auth-container.main-container {
+        border-width: 0;
+        box-shadow: none
+    }
+}
+
+#okta-sign-in.auth-container.main-container .bg-helper {
+    color: #fff
+}
+
+#okta-sign-in.auth-container.main-container .primary-auth .password-with-toggle {
+    padding-right: 65px
+}
+
+#okta-sign-in.auth-container.main-container .o-form .o-form-input .o-form-control .input-icon-divider {
+    border-right: 1px solid #8c8c96;
+    height: 38px;
+    position: absolute;
+    right: 34px;
+    top: 0
+}
+
+#okta-sign-in.auth-container.main-container .o-form .o-form-input .o-form-control.focused-input .input-icon-divider {
+    border-right: 1px solid #0074b3
+}
+
+#okta-sign-in.auth-container.main-container .margin-btm-5 {
+    margin-bottom: 5px
+}
+
+#okta-sign-in.auth-container.main-container .margin-btm-30 {
+    margin-bottom: 30px
+}
+
+#okta-sign-in.auth-container.main-container .margin-top-30 {
+    margin-top: 30px
+}
+
+#okta-sign-in.auth-container .okta-sign-in-header {
+    border-bottom-color: #ddd
+}
+
+#okta-sign-in.auth-container .okta-sign-in-beacon-border {
+    border-color: #a7a7a7
+}
+
+#okta-sign-in.auth-container .okta-form-divider {
+    border-bottom-color: #e8e8e8
+}
+
+#okta-sign-in.auth-container .button {
+    background-color: #fbfbfb;
+    background: -o-linear-gradient(top, #fbfbfb 0, #f8f8f8 100%);
+    background: -ms-linear-gradient(top, #fbfbfb 0, #f8f8f8 100%);
+    background: linear-gradient(#fbfbfb, #f8f8f8);
+    border-color: #c3c3c3 #c3c3c3 #bbb;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .05), inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    color: #1d1d21
+}
+
+#okta-sign-in.auth-container .button:active, #okta-sign-in.auth-container .button:focus, #okta-sign-in.auth-container .button:hover {
+    background-color: #fff;
+    background: -o-linear-gradient(top, #fff 0, #fcfcfc 100%);
+    background: -ms-linear-gradient(top, #fff 0, #fcfcfc 100%);
+    background-image: linear-gradient(#fff, #fcfcfc);
+    border-color: #b2b2b2 #b2b2b2 #afafaf;
+    box-shadow: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#okta-sign-in.auth-container .button:focus {
+    border-color: #0074b3
+}
+
+#okta-sign-in.auth-container .button-dark {
+    background-color: #929292;
+    background: -o-linear-gradient(top, #929292 0, #8a8a8a 100%);
+    background: -ms-linear-gradient(top, #929292 0, #8a8a8a 100%);
+    background: linear-gradient(#929292, #8a8a8a);
+    border-color: #6c6c6c #6c6c6c #676767;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15), inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    color: #fff
+}
+
+#okta-sign-in.auth-container .button-dark:active, #okta-sign-in.auth-container .button-dark:focus, #okta-sign-in.auth-container .button-dark:hover {
+    background-color: #9a9a9a;
+    background: -o-linear-gradient(top, #9a9a9a 0, #929292 100%);
+    background: -ms-linear-gradient(top, #9a9a9a 0, #929292 100%);
+    background-image: linear-gradient(#9a9a9a, #929292);
+    border-color: #606060 #606060 #5e5e5e;
+    box-shadow: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#okta-sign-in.auth-container .button-primary {
+    background-color: #007dc1;
+    background: -o-linear-gradient(top, #007dc1 0, #0073b2 100%);
+    background: -ms-linear-gradient(top, #007dc1 0, #0073b2 100%);
+    background: linear-gradient(#007dc1, #0073b2);
+    border-color: #004b75 #004b75 #00456a;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15), inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    color: #fff
+}
+
+#okta-sign-in.auth-container .button-primary:active, #okta-sign-in.auth-container .button-primary:focus, #okta-sign-in.auth-container .button-primary:hover {
+    background-color: #0087d0;
+    background: -o-linear-gradient(top, #0087d0 0, #007dc1 100%);
+    background: -ms-linear-gradient(top, #0087d0 0, #007dc1 100%);
+    background-image: linear-gradient(#0087d0, #007dc1);
+    border-color: #003d5e #003d5e #003a59;
+    box-shadow: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#okta-sign-in.auth-container .button-success {
+    background-color: #4cbf9c;
+    background: -o-linear-gradient(top, #4cbf9c 0, #42b995 100%);
+    background: -ms-linear-gradient(top, #4cbf9c 0, #42b995 100%);
+    background: linear-gradient(#4cbf9c, #42b995);
+    border-color: #328c71 #328c71 #2f856b;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15), inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    color: #fff
+}
+
+#okta-sign-in.auth-container .button-success:active, #okta-sign-in.auth-container .button-success:focus, #okta-sign-in.auth-container .button-success:hover {
+    background-color: #57c3a2;
+    background: -o-linear-gradient(top, #57c3a2 0, #4cbf9c 100%);
+    background: -ms-linear-gradient(top, #57c3a2 0, #4cbf9c 100%);
+    background-image: linear-gradient(#57c3a2, #4cbf9c);
+    border-color: #2c7b63 #2c7b63 #2b7861;
+    box-shadow: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#okta-sign-in.auth-container .button.link-button-disabled {
+    color: #aaa
+}
+
+#okta-sign-in.auth-container .button.link-button-disabled:active, #okta-sign-in.auth-container .button.link-button-disabled:focus, #okta-sign-in.auth-container .button.link-button-disabled:hover {
+    background-image: none;
+    cursor: default
+}
+
+#okta-sign-in.auth-container .button.button-primary.link-button-disabled {
+    background-color: #63b1d7;
+    background-image: none;
+    border-color: #63b1d7;
+    box-shadow: none;
+    color: #fff
+}
+
+#okta-sign-in.auth-container .button.button-primary.link-button-disabled:active, #okta-sign-in.auth-container .button.button-primary.link-button-disabled:focus, #okta-sign-in.auth-container .button.button-primary.link-button-disabled:hover {
+    background-image: none;
+    cursor: default
+}
+
+#okta-sign-in.auth-container .okta-form-input-field {
+    background-color: #fff;
+    border-color: #8c8c96
+}
+
+#okta-sign-in.auth-container .okta-form-input-field:hover {
+    border-color: #1d1d21
+}
+
+#okta-sign-in.auth-container .okta-form-input-field.focused-input {
+    border-color: #0074b3
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input {
+    color: #1d1d21;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input::-webkit-input-placeholder {
+    color: #aaa;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input::-moz-placeholder {
+    color: #aaa;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input:-ms-input-placeholder {
+    color: #aaa;
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input[disabled] {
+    -webkit-text-fill-color: #6e6e78;
+    color: #6e6e78
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input[type=password] {
+    font-family: Verdana, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input[type=password]:-ms-input-placeholder {
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+#okta-sign-in.auth-container .okta-form-input-field input[type=password]:placeholder-shown {
+    font-family: proxima nova, montserrat-okta, Arial, Helvetica, sans-serif
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login-bg-image {
+        background-color: #fff !important;
+        background-image: none !important;
+        -webkit-filter: unset !important;
+        filter: unset !important
+    }
+
+    #okta-sign-in.auth-container {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto
+    }
+
+    #okta-sign-in.auth-container.main-container {
+        border: 0;
+        box-shadow: none
+    }
+
+    #okta-sign-in.auth-container .auth-content {
+        margin: 0 auto;
+        max-width: 316px
+    }
+}
+

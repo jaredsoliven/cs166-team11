@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sjsu_components_style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <title>(not) San Jose State University – Sign In</title>
+</head>
+
+<body class="auth okta-container">
+<div id="login-bg-image" class="login-bg-image tb--background bgStyle"></div>
+<div class="content">
+    <div class="applogin-banner">
+        <div class="applogin-background"></div>
+        <div class="applogin-container">
+            <h1>
+                <span class="applogin-app-title">Connecting to</span>
+                <span class="applogin-app-logo">
+                    <img src="{{ url_for('static', filename='images/applogo.png') }}" alt="SJSU Logo"
+                         class="logo sjsu-logo">
+                </span>
+            </h1>
+            <p>Sign in with your account to access SJSU Application Portal (2023)</p>
+        </div>
+    </div>
+</div>
+
+<div id="signin-container">
+    <div class="warning">
+        <p>
+            THIS IS A FAKE WEBSITE MADE FOR A CLASS. DO <strong>NOT</strong> ENTER REAL SENSITIVE INFORMATION.
+        </p>
+    </div>
+    <main class="auth-container main-container no-beacon" id="okta-sign-in" style="" tabindex="-1">
+        <div class="okta-sign-in-header auth-header">
+            <h1>
+                <img src="{{ url_for('static', filename='images/logo.png') }}" class="auth-org-logo"
+                     alt="San Jose State University logo">
+            </h1>
+            <div data-type="beacon-container" class="beacon-container"></div>
+        </div>
+        <div class="auth-content">
+            <div class="auth-content-inner">
+                <div class="siw-main-view primary-auth">
+                    <div class="siw-main-header">
+                        <div></div>
+                    </div>
+                    <div class="siw-main-body">
+                        <form method="POST" action="/signin" slot="content" class="o-form o-form-edit-mode">
+                            <div class="o-form-content o-form-theme clearfix"><h2 class="okta-form-title o-form-head">
+                                Sign In</h2>
+                                <div class="o-form-info-container"></div>
+                                <div class="o-form-error-container" data-se="o-form-error-container" role="alert"></div>
+                                <div class="o-form-fieldset-container">
+                                    <div class="o-form-fieldset o-form-label-top">
+                                        <div class="okta-form-label o-form-label">
+                                            <label for="form-identifier-input">SJSU ID Number</label>
+                                        </div>
+                                        <div class="o-form-input o-form-has-errors">
+                                            <p class="o-form-explain">
+                                                #########
+                                            </p>
+                                            <span class="o-form-input-name-identifier o-form-control okta-form-input-field input-fix o-form-has-errors">
+                                    <input type="text" placeholder="" name="identifier" id="form-identifier-input"
+                                           value="">
+                                </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="o-form-fieldset o-form-label-top">
+                                        <div class="okta-form-label o-form-label">
+                                            <label for="form-password-input">Password</label>
+                                        </div>
+                                        <div class="o-form-input">
+                                            <p class="o-form-explain">SJSUOne Password</p><span
+                                                class="o-form-input-name-credentials.passcode o-form-control okta-form-input-field input-fix">
+                                    <input type="password" placeholder="" name="credentials.password"
+                                           id="form-password-input" value="" class="passowrd-with-toggle">
+                                    <span class="password-toggle">
+                                        <span class="eyeicon visibility-16 button-show" style="display: inline"></span>
+                                        <span class="eyeicon visibility-off-16 button-hide"
+                                              style="display: none"></span>
+                                    </span>
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div data-se="o-form-fieldset-rememberMe" class="o-form-fieldset o-form-label-top">
+                                        <div data-se="o-form-input-container" class="o-form-input"><span
+                                                data-se="o-form-input-rememberMe" class="o-form-input-name-rememberMe"><div
+                                                class="custom-checkbox"><input type="checkbox" name="rememberMe"
+                                                                               id="form-rememberMe-input"><label
+                                                for="form-rememberMe-input"
+                                                data-se-for-name="rememberMe">Keep me signed in</label></div></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o-form-button-bar">
+                                <input class="button button-primary" type="submit" value="Sign in" data-type="save">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="siw-main-footer">
+                        <div class="auth-footer">
+                            <a href="https://sjsu.okta.com" class="link js-forgot-password">Forgot password?</a>
+                            <a href="https://sjsu.okta.com" class="link js-unlock">Unlock account?</a>
+                            <a href="https://sjsu.okta.com" class="link js-help">Help</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="footer">
+    <div class="footer-container clearfix">
+        <p class="copyright">Powered by <a a href="https://www.okta.com/?internal_link=wic_login"
+                                           class="inline-block notranslate">Okta</a></p>
+        <p class="privacy-policy"><a href="https://www.okta.com" class="inline-block">Privacy Policy</a></p>
+    </div>
+</div>
+</body>
+</html>
