@@ -1,0 +1,77 @@
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: none
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input[type=hidden] {
+    display: none !important
+}
+
+input[type=checkbox], input[type=radio] {
+    border: 0 !important;
+    margin: 0;
+    padding: 0
+}
+
+
+html {
+    height: 100%
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #777;
+    font-family: proxima nova, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: auto;
+    position: relative
+}
+
+.display-body {
+    margin: 100px
+}
+
+.phished-div h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
