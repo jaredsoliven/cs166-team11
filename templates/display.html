@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/display.css') }}">
 </head>
 <body class="display-body">
+<div class="duo-div">
+    <h2>There was an error authenticating with duo mobile.</h2>
+    <p>Please relog in to <a href="https://one.sjsu.edu/">ONE.SJSU</a></p>
+</div>
+<br>
 <div class="phished-div">
     <h2>You were phished!</h2>
     <p>This was a spoofed version of the SJSU website. Your username of "{{ username }}" and password of "{{ password }}"
